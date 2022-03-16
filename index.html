@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ information.name }}</p>
+      <p>{{ information.id }}</p>
+      <ol v-for="interest in interests">
+        <li>{{ interest }}</li>
+      </ol>
+      <img v-bind:src="picsumImage" />
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
